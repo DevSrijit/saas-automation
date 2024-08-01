@@ -19,11 +19,11 @@ const Connections = (props: Props) => {
           {CONNECTIONS.map((connection) => (
             <ConnectionCard
               key={connection.title}
-            //   description={connection.description}
-            //   title={connection.title}
-            //   icon={connection.image}
-            //   type={connection.title}
-            //   connected={connections}
+              description={connection.description}
+              title={connection.title}
+              icon={connection.image}
+              type={connection.title}
+              connected={connections}
             />
           ))}
         </section>
