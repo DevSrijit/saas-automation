@@ -11,7 +11,7 @@ LR.registerBlocks(LR)
 
 const UploadCareButton = ({ onUpload }: Props) => {
   const router = useRouter()
-  const ctxProviderRef = useRef<
+  const ctxProviderRef:any = useRef<
     typeof LR.UploadCtxProvider.prototype & LR.UploadCtxProvider
   >(null)
 
