@@ -5,6 +5,7 @@ import { ThemeProvider } from "@/providers/theme-provider";
 import {
   ClerkProvider,
 } from "@clerk/nextjs";
+import { dark } from "@clerk/themes";
 
 const font = DM_Sans({ subsets: ["latin"] });
 
@@ -21,6 +22,9 @@ export default function RootLayout({
   return (
     <ClerkProvider
     afterSignOutUrl="/"
+    appearance={{
+      baseTheme: dark,
+    }}
     >
       <html lang="en">
         <body className={font.className}>
