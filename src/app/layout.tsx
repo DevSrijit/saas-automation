@@ -2,12 +2,10 @@ import type { Metadata } from "next";
 import { DM_Sans } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/providers/theme-provider";
-import {
-  ClerkProvider,
-} from "@clerk/nextjs";
+import { ClerkProvider } from "@clerk/nextjs";
 import { dark } from "@clerk/themes";
 import ModalProvider from "@/providers/modal-provider";
-
+import { BillingProvider } from "@/providers/billing-provider";
 
 const font = DM_Sans({ subsets: ["latin"] });
 
@@ -23,10 +21,10 @@ export default function RootLayout({
 }>) {
   return (
     <ClerkProvider
-    afterSignOutUrl="/"
-    appearance={{
-      baseTheme: dark,
-    }}
+      afterSignOutUrl="/"
+      appearance={{
+        baseTheme: dark,
+      }}
     >
       <html lang="en">
         <body className={font.className}>
@@ -36,9 +34,9 @@ export default function RootLayout({
             enableSystem
             disableTransitionOnChange
           >
-            <ModalProvider>
-            {children}
-            </ModalProvider>
+            <BillingProvider>
+              <ModalProvider>{children}</ModalProvider>
+            </BillingProvider>
           </ThemeProvider>
         </body>
       </html>
