@@ -1,15 +1,20 @@
 import { google } from 'googleapis'
-import { auth, clerkClient } from '@clerk/nextjs/server'
+import { auth } from '@clerk/nextjs/server'
+import { createClerkClient } from "@clerk/clerk-sdk-node";
 import { NextResponse } from 'next/server'
 import { v4 as uuidv4 } from 'uuid'
 import { db } from '@/lib/db'
 
 export async function GET() {
+  const clerkClient = createClerkClient({
+    secretKey: process.env.CLERK_SECRET_KEY,
+  });
+  ("use server");
   const oauth2Client = new google.auth.OAuth2(
     process.env.GOOGLE_CLIENT_ID,
     process.env.GOOGLE_CLIENT_SECRET,
     process.env.OAUTH2_REDIRECT_URI
-  )
+  );
 
   const { userId } = auth()
   if (!userId) {
@@ -18,10 +23,11 @@ export async function GET() {
 
   const clerkResponse = await clerkClient.users.getUserOauthAccessToken(
     userId,
-    'oauth_google'
+    "oauth_google"
   );
-  
+
   const accessToken = clerkResponse.data[0].token;
+  console.log(accessToken)
   
   oauth2Client.setCredentials({
     access_token: accessToken,
@@ -55,9 +61,10 @@ export async function GET() {
       )
     }
   } catch (error) {
+    console.log(error)
     return Response.json(
       {
-        message: 'Something went wrong',
+        message: 'Something went wrong:' + error,
       },
       {
         status: 500,
