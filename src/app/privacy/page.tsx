@@ -9,7 +9,7 @@ export default function PrivacyPolicy() {
     <div className="p-20 bg-white text-gray-900 w-full min-w-screen">
       <h1 className="text-4xl font-bold mb-6 text-center">Privacy Policy</h1>
       <div className="prose prose-lg max-w-none">
-        <p>
+        <p className='text-xl mb-5'>
           Welcome to Fuzzie! Your privacy is critically important to us. This Privacy Policy outlines our policies and procedures regarding the collection, use, and protection of personal information when you use our website. By accessing or using our website, you agree to the terms of this Privacy Policy.
         </p>
         <p>
