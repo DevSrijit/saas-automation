@@ -9,11 +9,11 @@ export default function TermsOfService() {
     <div className="p-20 bg-white text-gray-900 w-full min-w-screen">
       <h1 className="text-4xl font-bold mb-6 text-center">Terms of Service</h1>
       <div className="prose prose-lg max-w-none">
-        <p className='text-xl mb-5'>
-          Welcome to Fuzzie! These Terms of Service ("Terms") govern your access to and use of our website and services. By accessing or using our website, you agree to comply with and be bound by these Terms. If you do not agree to these Terms, please do not use our website or services.
+        <p>
+          Welcome to Fuzzie! These Terms of Service (&quot;Terms&quot;) govern your access to and use of our website and services. By accessing or using our website, you agree to comply with and be bound by these Terms. If you do not agree to these Terms, please do not use our website or services.
         </p>
         <p>
-          <strong>Disclaimer:</strong> Fuzzie is developed and maintained by an independent developer who is currently a student. While we strive to provide high-quality services, we are not legal or security experts. These Terms are provided on an "as-is" basis, and we disclaim all warranties of any kind, express or implied.
+          <strong>Disclaimer:</strong> Fuzzie is developed and maintained by an independent developer who is currently a student. While we strive to provide high-quality services, we are not legal or security experts. These Terms are provided on an &quot;as-is&quot; basis, and we disclaim all warranties of any kind, express or implied.
         </p>
         <h2 className="text-2xl font-semibold mt-8 mb-4">Use of Services</h2>
         <p>
@@ -47,7 +47,7 @@ export default function TermsOfService() {
         </p>
         <h2 className="text-2xl font-semibold mt-8 mb-4">Indemnification</h2>
         <p>
-          You agree to indemnify, defend, and hold harmless Fuzzie, its developers, and affiliates from and against any and all claims, liabilities, damages, losses, costs, expenses, or fees (including reasonable attorneys' fees) that they may incur as a result of or arising from your use of our services or your violation of these Terms.
+          You agree to indemnify, defend, and hold harmless Fuzzie, its developers, and affiliates from and against any and all claims, liabilities, damages, losses, costs, expenses, or fees (including reasonable attorneys&apos; fees) that they may incur as a result of or arising from your use of our services or your violation of these Terms.
         </p>
         <h2 className="text-2xl font-semibold mt-8 mb-4">Governing Law</h2>
         <p>

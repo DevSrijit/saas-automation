@@ -9,11 +9,11 @@ export default function PrivacyPolicy() {
     <div className="p-20 bg-white text-gray-900 w-full min-w-screen">
       <h1 className="text-4xl font-bold mb-6 text-center">Privacy Policy</h1>
       <div className="prose prose-lg max-w-none">
-        <p className='text-xl mb-5'>
+        <p className='mb-5 text-xl'>
           Welcome to Fuzzie! Your privacy is critically important to us. This Privacy Policy outlines our policies and procedures regarding the collection, use, and protection of personal information when you use our website. By accessing or using our website, you agree to the terms of this Privacy Policy.
         </p>
         <p>
-          <strong>Disclaimer:</strong> Please note that Fuzzie is developed and maintained by an independent developer who is currently a student. While we strive to ensure the security and privacy of your information, we are not legal or security experts. This Privacy Policy is provided on an "as-is" basis, and we disclaim all warranties of any kind, express or implied.
+          <strong>Disclaimer:</strong> Please note that Fuzzie is developed and maintained by an independent developer who is currently a student. While we strive to ensure the security and privacy of your information, we are not legal or security experts. This Privacy Policy is provided on an &quot;as-is&quot; basis, and we disclaim all warranties of any kind, express or implied.
         </p>
         <h2 className="text-2xl font-semibold mt-8 mb-4">Information We Collect</h2>
         <p>
@@ -71,7 +71,7 @@ export default function PrivacyPolicy() {
         <p>
           We use your data solely for the essential functionality of our website. We do not sell, rent, or otherwise disclose your personal information to third parties for their marketing or other purposes.
         </p>
-        <h2 className="text-2xl font-semibold mt-8 mb-4">Children's Privacy</h2>
+        <h2 className="text-2xl font-semibold mt-8 mb-4">Children&apos;s Privacy</h2>
         <p>
           Our website is not intended for use by children under the age of 13. We do not knowingly collect personal information from children under 13. If we become aware that we have inadvertently received personal information from a child under 13, we will delete such information from our records.
         </p>
