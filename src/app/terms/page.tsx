@@ -9,7 +9,7 @@ export default function TermsOfService() {
     <div className="p-20 bg-white text-gray-900 w-full min-w-screen">
       <h1 className="text-4xl font-bold mb-6 text-center">Terms of Service</h1>
       <div className="prose prose-lg max-w-none">
-        <p>
+        <p className='mb-5 text-xl'>
           Welcome to Fuzzie! These Terms of Service (&quot;Terms&quot;) govern your access to and use of our website and services. By accessing or using our website, you agree to comply with and be bound by these Terms. If you do not agree to these Terms, please do not use our website or services.
         </p>
         <p>
