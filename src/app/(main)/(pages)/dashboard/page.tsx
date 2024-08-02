@@ -16,7 +16,7 @@ export default function DashboardPage() {
         <p className="text-neutral-500 max-w-xl mx-auto my-2 text-lg text-center relative z-10">
           Head over to Workflows to create your first automation. You can use
           notion, discord, slack and many more apps to create your automations.
-          Experience
+          Experience flawless automations.
         </p>
         <div className="flex justify-center items-center">
           <Button className="mt-4 z-50" onClick={() => router.push('/workflows')}>
