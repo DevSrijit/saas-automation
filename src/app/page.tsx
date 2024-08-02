@@ -1,12 +1,12 @@
-import { CardBody, CardContainer, CardItem } from '@/components/global/3d-card'
-import { HeroParallax } from '@/components/global/connect-parallax'
-import { ContainerScroll } from '@/components/global/container-scroll-animation'
-import { InfiniteMovingCards } from '@/components/global/infinite-moving-cards'
-import { LampComponent } from '@/components/global/lamp'
-import Navbar from '@/components/global/navbar'
-import { Button } from '@/components/ui/button'
-import { clients, products } from '@/lib/constant'
-import { CheckIcon } from 'lucide-react'
+import { CardBody, CardContainer, CardItem } from "@/components/global/3d-card";
+import { HeroParallax } from "@/components/global/connect-parallax";
+import { ContainerScroll } from "@/components/global/container-scroll-animation";
+import { InfiniteMovingCards } from "@/components/global/infinite-moving-cards";
+import { LampComponent } from "@/components/global/lamp";
+import Navbar from "@/components/global/navbar";
+import { Button } from "@/components/ui/button";
+import { clients, products } from "@/lib/constant";
+import { CheckIcon } from "lucide-react";
 
 export default function Home() {
   //WIP: remove fault IMAge for home page
@@ -20,7 +20,7 @@ export default function Home() {
             titleComponent={
               <div className="flex items-center flex-col">
                 <Button
-                  size={'lg'}
+                  size={"lg"}
                   className="p-8 mb-8 md:mb-0 text-2xl w-full sm:w-fit border-t-2 rounded-full border-[#4D4D4D] bg-[#1F1F1F] hover:bg-white group transition-all flex items-center justify-center gap-4 hover:shadow-xl hover:shadow-neutral-500 duration-500"
                 >
                   <span className="bg-clip-text text-transparent bg-gradient-to-r from-neutral-500 to-neutral-600  md:text-center font-sans group-hover:bg-gradient-to-r group-hover:from-black goup-hover:to-black">
@@ -89,7 +89,7 @@ export default function Home() {
                   as="button"
                   className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold"
                 >
-                  Get Started Now
+                  <a href="/billing">Get Started Now</a>
                 </CardItem>
               </div>
             </CardBody>
@@ -136,7 +136,7 @@ export default function Home() {
                   as="button"
                   className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold"
                 >
-                  Get Started Now
+                  <a href="/billing">Get Started Now</a>
                 </CardItem>
               </div>
             </CardBody>
@@ -183,7 +183,7 @@ export default function Home() {
                   as="button"
                   className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold"
                 >
-                  Get Started Now
+                  <a href="/billing">Get Started Now</a>
                 </CardItem>
               </div>
             </CardBody>
@@ -191,5 +191,5 @@ export default function Home() {
         </div>
       </section>
     </main>
-  )
+  );
 }
